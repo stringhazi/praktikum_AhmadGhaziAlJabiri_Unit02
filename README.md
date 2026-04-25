@@ -1,1 +1,0 @@
-by. ridwan, M.T
