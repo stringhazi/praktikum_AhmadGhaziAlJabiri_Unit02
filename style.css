@@ -1,0 +1,207 @@
+/* Selector universal untuk semua elemen - reset default browser */
+* {
+    box-sizing: border-box; /* Mengatur model box-sizing agar padding dan border termasuk dalam lebar/tinggi total */
+    font-family: 'Arial', sans-serif; /* Mengatur font default untuk semua elemen */
+    margin: 0; /* Menghapus margin default */
+    padding: 0; /* Menghapus padding default */
+}
+
+/* Selector untuk elemen body - bagian utama halaman */
+body {
+    background-color: #f8f9fa; /* Warna latar belakang halaman */
+    color: #333; /* Warna teks default */
+    line-height: 1.6; /* Tinggi baris untuk keterbacaan teks */
+}
+
+/* Header & Navigasi */
+/* Selector untuk header sekolah */
+.header-sekolah-saya {
+    background-color: #0c2461; /* Warna latar belakang header */
+    color: white; /* Warna teks header */
+    padding: 20px; /* Ruang dalam header */
+    text-align: center; /* Posisi teks di tengah */
+}
+
+/* Selector untuk container logo di dalam header */
+.logo-container h1 {
+    margin-bottom: 5px; /* Margin bawah untuk jarak */
+}
+
+/* Selector untuk navigasi ul */
+nav ul {
+    list-style: none; /* Menghapus bullet point dari list */
+    margin-top: 15px; /* Margin atas untuk jarak */
+}
+
+/* Selector untuk item list navigasi */
+nav ul li {
+    display: inline; /* Menampilkan item secara horizontal */
+    margin: 0 15px; /* Margin kiri kanan untuk jarak antar item */
+}
+
+/* Selector untuk link di dalam navigasi */
+nav ul li a {
+    color: #f8c291; /* Warna teks link */
+    font-weight: bold; /* Membuat teks tebal */
+    text-decoration: none; /* Menghapus garis bawah default */
+}
+
+/* Selector untuk efek hover pada link navigasi */
+nav ul li a:hover {
+    text-decoration: underline; /* Menambahkan garis bawah saat hover */
+}
+
+/* Tata Letak Utama */
+/* Selector untuk container utama */
+.container {
+    margin: 30px auto; /* Margin atas bawah dan auto untuk centering */
+    max-width: 1000px; /* Lebar maksimal container */
+    padding: 0 20px; /* Padding kiri kanan */
+}
+
+/* Selector untuk bagian info */
+.info-section {
+    background: white; /* Latar belakang putih */
+    border-left: 5px solid #0c2461; /* Border kiri berwarna */
+    border-radius: 8px; /* Sudut melengkung */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Bayangan halus */
+    margin-bottom: 25px; /* Margin bawah */
+    padding: 20px; /* Ruang dalam */
+}
+
+/* Selector untuk wrapper konten */
+.content-wrapper {
+    display: flex; /* Menggunakan flexbox untuk layout */
+    flex-wrap: wrap; /* Membungkus item jika perlu */
+    gap: 20px; /* Jarak antar item */
+}
+
+/* Selector untuk container form dan output */
+.form-container,
+.output-container {
+    background: white; /* Latar belakang putih */
+    border-radius: 8px; /* Sudut melengkung */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Bayangan halus */
+    flex: 1; /* Membuat item fleksibel */
+    min-width: 300px; /* Lebar minimal */
+    padding: 25px; /* Ruang dalam */
+}
+
+/* Elemen Formulir */
+/* Selector untuk grup form */
+.form-group {
+    margin-bottom: 15px; /* Margin bawah untuk jarak */
+}
+
+/* Selector untuk label form */
+label {
+    display: block; /* Menampilkan sebagai blok */
+    font-size: 14px; /* Ukuran font */
+    font-weight: bold; /* Membuat teks tebal */
+    margin-bottom: 5px; /* Margin bawah */
+}
+
+/* Selector untuk input dan select */
+input,
+select {
+    border: 1px solid #ccc; /* Border abu-abu */
+    border-radius: 4px; /* Sudut melengkung */
+    padding: 10px; /* Ruang dalam */
+    width: 100%; /* Lebar penuh */
+}
+
+/* Selector untuk button */
+button {
+    background-color: #38ada9; /* Warna latar belakang */
+    border: none; /* Tanpa border */
+    border-radius: 4px; /* Sudut melengkung */
+    color: white; /* Warna teks */
+    cursor: pointer; /* Kursor pointer saat hover */
+    font-weight: bold; /* Teks tebal */
+    padding: 12px; /* Ruang dalam */
+    transition: 0.3s; /* Transisi halus */
+    width: 100%; /* Lebar penuh */
+}
+
+/* Selector untuk efek hover pada button */
+button:hover {
+    background-color: #079992; /* Warna latar saat hover */
+}
+
+.hapus {
+    background-color: #e55039; /* Warna latar belakang merah untuk tombol delete */
+    border: none; /* Tanpa border */
+    border-radius: 4px; /* Sudut melengkung */
+    color: white; /* Warna teks */
+    cursor: pointer; /* Kursor pointer saat hover */
+    font-weight: bold; /* Teks tebal */
+    padding: 5px; /* Ruang dalam */
+    transition: 0.3s; /* Transisi halus */
+    width: 30%; /* Lebar kecil */
+}
+
+/* Notifikasi & Peserta */
+/* Selector untuk error yang tersembunyi */
+.error-hidden {
+    display: none; /* Menyembunyikan elemen */
+}
+
+/* Selector untuk error yang terlihat */
+.error-visible {
+    color: #e55039; /* Warna teks merah */
+    display: block; /* Menampilkan sebagai blok */
+    font-size: 13px; /* Ukuran font */
+    font-weight: bold; /* Teks tebal */
+    margin-top: 10px; /* Margin atas */
+}
+
+/* Selector untuk kartu siswa */
+.card-siswa {
+    background: #dbdcdd; /* Latar belakang abu terang */
+    border: 1px solid #dfe4ea; /* Border tipis */
+    border-radius: 6px; /* Sudut melengkung */
+    margin-bottom: 10px; /* Margin bawah */
+    padding: 15px; /* Ruang dalam */
+}
+
+/* Selector untuk heading dalam kartu siswa */
+.card-siswa h4 {
+    color: #0c2461; /* Warna teks */
+    margin-bottom: 5px; /* Margin bawah */
+}
+
+/* Selector untuk list kosong */
+.empty-list {
+    color: #747d8c; /* Warna teks abu */
+    font-style: italic; /* Gaya font miring */
+    margin-top: 20px; /* Margin atas */
+    text-align: center; /* Teks di tengah */
+}
+
+/* Footer */
+/* Selector untuk footer sekolah */
+.footer-sekolah {
+    background-color: #0c2461; /* Warna latar belakang */
+    color: white; /* Warna teks */
+    margin-top: 40px; /* Margin atas */
+    padding: 20px; /* Ruang dalam */
+    text-align: center; /* Teks di tengah */
+}
+
+/* Selector untuk border warna pada kartu siswa berdasarkan ekstrakurikuler */
+.borderPramuka {
+    border-width: 6px; /* Lebar border */
+    border-style: double; /* Jenis border */
+}
+.borderPMR {
+    border-width: 3px; /* Lebar border */
+    border-style:dashed; /* Jenis border */
+}
+.borderCoding {
+    border-width: 4px; /* Lebar border */
+    border-style:outset; /* Jenis border */
+}
+.borderJurnalistik {
+    border-width: 4px; /* Lebar border */
+    border-style:ridge; /* Jenis border */
+}   
